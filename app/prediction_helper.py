@@ -9,7 +9,7 @@ import joblib
 ARTIFACTS_DIR = Path(__file__).resolve().parent / "artifacts"
 
 # Path to the saved model and its components
-MODEL_PATH = r"D:\Hello_world\Credit_Risk_Modelling\app\artifacts\model_data.joblib"
+MODEL_PATH = (ARTIFACTS_DIR / "model_data.joblib")
 
 # Load the model and its components
 model_data = joblib.load(MODEL_PATH)
